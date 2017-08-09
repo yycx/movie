@@ -1,0 +1,94 @@
+/* pages/moreMovie/moreMovie.wxss */
+
+.swiper-tab {
+  width: 100%;
+  border-bottom: 2rpx solid #A19EA6;
+  text-align: center;
+  line-height: 80rpx;
+  z-index:99;
+  position:fixed;
+  background:white;
+
+}
+
+.swiper-tab-list {
+  font-size: 20px;
+  display: inline-block;
+  width: 50%;
+  color: #A19EA6;
+}
+
+.on {
+  color: #B3E98B;
+  border-bottom: 5rpx solid #b3e98b;
+  font-weight: bolder;
+}
+
+.swiper-box {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 50px;
+}
+
+
+/*view部分*/
+/*第一个框*/
+.view-item{
+  padding: 15px 10px;
+  border-bottom: 1px solid rgb(230, 230, 230);
+}
+/*第二个框*/
+.view-connect{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.view-connect .view-left{
+  display: flex;
+  flex-direction: row;
+}
+.view-connect .view-left image{
+  width: 100px;
+  height: 120px;
+}
+.view-connect .des{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-left: 10px;
+}
+.view-connect .des text{
+  font-size: 14px;
+  color:#9E9E9E;
+}
+.view-connect .des .title{
+  color:#4A4A4A;
+  font-weight: bolder;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 150px;
+  text-align: left;
+}
+.view-connect .des .see-m{
+  color:#A0E0F9;
+}
+.view-connect .view-right .buy{
+  border: 1px solid #A0E0F9;
+  padding: 10px;
+  border-radius: 5px;
+  color: #A0E0F9;
+}
+
+.daoyam{
+  width: 150px;
+  text-align: left !important;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size:16px;
+}
+

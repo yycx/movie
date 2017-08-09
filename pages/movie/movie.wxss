@@ -1,0 +1,98 @@
+/* pages/movie/movie.wxss */
+
+.box{
+  background: #F8F8F8;
+}
+/*搜索部分*/
+.search{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 5px 15px;
+    border-top: 1px solid #E6E6E6;
+  border-bottom: 1px solid #E6E6E6;
+  background: white;
+}
+.search image{
+  width: 16px;
+  height:16px;
+}
+.search input{
+  font-size: 15px;
+  padding-left: 10px;
+}
+
+/*热映部分*/
+.hot{
+  height:300px;
+  margin-top: 30px;
+  border-bottom: 1px solid #E6E6E6;
+  border-top: 1px solid #E6E6E6;
+  background: white;
+  padding:10px 15px;
+}
+.hot .hot-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.hot .hot-top navigator{
+  color: #32CD32;
+}
+
+.hot .hot-connect .scrollview{
+  width: 100%;
+  height:260px;
+  white-space: nowrap;
+  margin-top:10px;
+}
+.scrollview .scroll{
+  height: 260px;
+  display: inline-block;
+  margin-top:20px;
+  text-align: center;
+}
+.scrollview .scroll .scroll-con{
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+}
+.scrollview .scroll .scroll-con .ratingView{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.scrollview .scroll .scroll-con .ratingImg{
+  background: url('http://chuantu.biz/t5/107/1497409688x2890174459.png');
+  width: 55px;
+  height:11px;
+  display: inline-block;
+  margin-right:5px;
+}
+.scrollview .scroll .scroll-con image{
+  width: 100px;
+  height:160px;
+}
+.scrollview .scroll .scroll-con text{
+  margin: 3px 2px;
+  font-size: 12px;
+}
+.scrollview .scroll .scroll-con text.title{
+  width: 110px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-break: keep-all;
+  font-size: 17px;
+  font-weight: bold;
+}
+.scrollview .scroll .scroll-con text.ratting{
+  color:gray;
+}
+.scrollview .scroll .scroll-con text.see-m{
+  color: gray;
+  font-size:14px;
+  font-family: 'Helvetica';
+}
+

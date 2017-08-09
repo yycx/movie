@@ -1,0 +1,65 @@
+<!--pages/movie/movie.wxml-->
+<view class="box" style="width:{{Width}}px;height:{{Height}}px">
+<!--头部-->
+  <view class="search">
+    <image src="/images/Search.png"></image>
+    <input type="text" placeholder="搜索电影" />
+  </view>
+
+  <!--热映部分-->
+  <view class="hot">
+    <!--热映头部-->
+    <view class="hot-top">
+       <text class="hot-title">影院热映</text>
+      <navigator url="/pages/moreMovie/moreMovie?tab=0">更多 ></navigator>
+    </view>
+    <!--热映内容-->
+    <view class="hot-connect">
+      <scroll-view class="scrollview" scroll-x="true">
+        <block wx:for="{{houtaiList}}">
+          <view class="scroll">
+          <view class="scroll-con">
+            <image src="{{item.images.large}}"></image>
+            <text class="title">{{item.title}}</text>
+            <view class="ratingView">
+              <text class="ratingImg" style="background-position:0px -{{item.rating.starf}}px"></text>
+              <text class="ratting">{{item.rating.average}}</text>
+            </view>
+            <text class="see-m">{{item.collect_count}}人想看</text>
+          </view>
+        </view>
+        </block>   
+      </scroll-view>
+    </view>
+  </view>
+
+  <!--即将上映部分-->
+   <view class="hot">
+    <!--即将上映头部-->
+    <view class="hot-top">
+       <text class="hot-title">即将上映</text>
+      <navigator url="/pages/moreMovie/moreMovie?tab=1">更多 ></navigator>
+    </view>
+
+    <!--即将上映内容-->
+    <view class="hot-connect">
+      <scroll-view class="scrollview" scroll-x="true">
+        <block wx:for="{{futureList}}">
+          <view class="scroll">
+          <view class="scroll-con">
+            <image src="{{item.images.large}}"></image>
+            <text class="title">{{item.title}}</text>
+            <view class="ratingView">
+              <text class="ratingImg" style="background-position:0px -{{item.rating.starf}}px"></text>
+              <text class="ratting">{{item.rating.average}}</text>
+            </view>           
+            <text class="see-m">{{item.collect_count}}人想看</text>
+          </view>
+        </view>
+        </block>   
+      </scroll-view>
+    </view>
+  </view>
+ 
+</view>
+
